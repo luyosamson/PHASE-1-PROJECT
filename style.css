@@ -1,8 +1,9 @@
-body{
+*{
 margin: 0%;
 padding: 0%;
-height: 100%;
-width: 100%;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
 
 }
 
@@ -37,4 +38,48 @@ animation-timing-function: ease-in-out;
 100% {
     background-image: url(images/image4.jpg);
 }
+}
+
+nav{
+background-color: brown;
+height: 80px;
+width: 100px;
+
+}
+label.logo{
+color: crimson;
+font-size:40px ;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+
+
+}
+
+nav ul{
+
+    float: left;
+    margin-right: 20px;
+}
+nav ul li{
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+background:#1b9bff;
+transition: 2s;
+
+
 }
