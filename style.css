@@ -1,0 +1,40 @@
+body{
+margin: 0%;
+padding: 0%;
+height: 100%;
+width: 100%;
+
+}
+
+
+.hero{
+background-image: url(images/image1.jpg);
+/*outline: 3px solid black;*/
+background-repeat: no-repeat;
+padding: 20em;
+background-size: cover;
+height: 80vh;
+width: 100%;
+
+animation-name: animate;
+animation-direction: alternate-reverse;
+animation-duration: 20s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation-timing-function: ease-in-out;
+
+}
+@keyframes animate{
+0%{background-image: url(images/image1.jpg);}
+25% {
+    background-image: url(images/image2.jpg);
+}
+50% {
+    background-image: url(images/image3.jpg);
+}
+
+100% {
+    background-image: url(images/image4.jpg);
+}
+}
