@@ -94,6 +94,12 @@ nav ul li a{
 /*Styling menu page*/
 
 .menu{
+width: auto;
+height: auto;
 
-    
+}
+#menu img{
+    width: 1000px;
+
+
 }
