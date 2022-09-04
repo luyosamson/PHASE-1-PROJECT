@@ -1,6 +1,6 @@
 *{
-margin: 0%;
-padding: 0%;
+margin: 0;
+padding: 0;
 text-decoration: none;
 list-style: none;
 box-sizing: border-box;
@@ -13,9 +13,11 @@ background-image: url(images/image1.jpg);
 /*outline: 3px solid black;*/
 background-repeat: no-repeat;
 padding: 20em;
-background-size: cover;
-height: 80vh;
+background-size:cover;
+opacity: 1;
 width: 100%;
+max-width: 100%;
+height: auto;
 
 animation-name: animate;
 animation-direction: alternate-reverse;
@@ -25,6 +27,17 @@ animation-iteration-count: infinite;
 animation-play-state: running;
 animation-timing-function: ease-in-out;
 
+}
+.text{
+
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-family:'Times New Roman', Times, serif;
+        color: brown;
+    
 }
 @keyframes animate{
 0%{background-image: url(images/image1.jpg);}
@@ -39,18 +52,19 @@ animation-timing-function: ease-in-out;
 }
 
 nav{
-background-color: brown;
-height: 80px;
-width: 100px;
+background-color: gold;
+height: 100px;
+width: 100%;
 
 }
 label.logo{
-color: crimson;
-font-size:40px ;
+color: brown;
+font-size:80px ;
 line-height: 80px;
 padding: 0 100px;
 font-weight: bold;
-
+font-family:monospace;
+float: right;
 
 }
 
@@ -58,26 +72,23 @@ nav ul{
 
     float: left;
     margin-right: 20px;
+    padding: 0px;
 }
 nav ul li{
 
-    display: inline-block;
+    display:inline-block;
     line-height: 80px;
     margin: 0 5px;
 
 }
 nav ul li a{
 
-    color: white;
-    font-size: 17px;
+    color: black;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 
 }
-a.active,a:hover{
-background:#1b9bff;
-transition: 2s;
 
 
-}
