@@ -1,3 +1,34 @@
+const image=document.getElementById('image')
+const box=document.getElementsByClassName('image-box')
+const meal_name=document.getElementById('name')
+const container=document.getElementsByClassName('box-container')
+const imageBox=document.getElementsByClassName('image-box')
+
+
+const api = "https://foodish-api.herokuapp.com/api/images/";
+
+const meals = ['biryani','burger','butter-chicken'];
+
+function getRandomMeal() {
+    var randomMeal = meals[Math.floor(Math.random() * meals.length)];
+    
+    fetch(api + randomMeal)
+        .then((response) => {
+            return response.json();
+           
+        })
+        .then((meal) => {
+        
+        meal_name.innerHTML = randomMeal.charAt(0).toUpperCase() + randomMeal.slice(1);
+     
+
+             image.src = meal.image;
+   
+        });
+}
+getRandomMeal()
+
+
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
@@ -41,7 +72,7 @@ document.querySelector('#close').onclick = () =>{
 }
 
 var swiper = new Swiper(".home-slider", {
-  spaceBetween: 50,
+  spaceBetween: 150,
   centeredSlides: true,
   autoplay: {
     delay: 5500,
@@ -87,3 +118,6 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+
+
+
