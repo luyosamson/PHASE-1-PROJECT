@@ -10,10 +10,12 @@ waiter to attend to them incase there is a huge number of customer to be attende
 I decided to use the three technologies(HTML,CSS and JavaScript) to enable me put what I had learned in the Bootcamp
 during phase 0 and phase 1 into practice,and that is the main reason I created this website.
 The project uses Foodish API to get random food images.
+
 				CHALLENGES FACED
 The main problem I encountred was how to fetch data from the API to my website.
 Through different sources of resources,I managed to overcome the challenge and hence I integrated the API into my 
 application.
+
 				MODULES
 This section tends to explain different section of the website from header to footer.
 	i)Home page
