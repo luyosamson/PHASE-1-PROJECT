@@ -11,6 +11,7 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
 
     <!-- custom css file link  -->
     
@@ -24,7 +25,7 @@
 
     <header>
 
-        <a href="#" class="logo"><i class="fas fa-utensils"></i>FoodIN</a>
+        <a href="#dishes" class="logo"><i class="fas fa-utensils"></i>FoodIN</a>
 
         <nav class="navbar">
             <a class="active" href="#home">home</a>
@@ -38,8 +39,9 @@
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#LOGIN" class='fa fa-user-circle'></a>
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#checkout" class="fas fa-shopping-cart" id="shopping-cart"><span></span></a>
         </div>
 
     </header>
@@ -130,8 +132,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>Ksh. 550</span>
-                <a href="#" class="btn">add to cart</a>
+                <span>Ksh. 650</span>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
 
             <div class="box">
@@ -146,14 +148,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>Ksh. 300</span>
-                <a href="#" class="btn">add to cart</a>
+                <span>Ksh. 400</span>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
 
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
-                <img src="images/dish-3.png" alt="">
+                <img src="images/Fresh Juice.png" alt="">
                 <h3>Fried Chicken</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -162,8 +164,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>Ksh. 500</span>
-                <a href="#" class="btn">add to cart</a>
+                <span>Ksh. 800</span>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
 
             <div class="box">
@@ -179,7 +181,7 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
                 <span>Ksh. 900</span>
-                <a href="#" class="btn">add to cart</a>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
 
             <div class="box">
@@ -194,13 +196,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>Ksh. 400</span>
-                <a href="#" class="btn">add to cart</a>
+                <span>Ksh. 999</span>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
 
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+                <a href="##dishes" class="fas fa-eye"></a>
                 <img src="images/Fried Fish.jpg" alt="">
                 <h3>Fried Fish</h3>
                 <div class="stars">
@@ -211,11 +213,11 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
                 <span>Ksh. 600</span>
-                <a href="#" class="btn">add to cart</a>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+                <a href="##dishes" class="fas fa-eye"></a>
                 <img src="images/pasta11.jpg" alt="">
                 <h3>Pasta</h3>
                 <div class="stars">
@@ -225,8 +227,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>Ksh. 300</span>
-                <a href="#" class="btn">add to cart</a>
+                <span>Ksh. 600</span>
+                <a href="##dishes" class="btn">add to cart</a>
             </div>
                 <div class="box">
                     <a href="#" class="fas fa-heart"></a>
@@ -240,8 +242,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <span>  Ksh. 800</span>
-                    <a href="#" class="btn">add to cart</a>
+                    <span>  Ksh. 750</span>
+                    <a href="#dishes" class="btn">add to cart</a>
                 </div>
              
 
@@ -255,7 +257,7 @@
     <!--DATA ARE TO BE FETCHED FROM Foodish API-->
     <section class="menu" id="menu">
 <h3 class="sub-heading"> SPECIAL DISH </h3>
-<h1 class="heading"> TODAY'S SPECIALITY </h1>
+<h1 class="heading"> TODAY'S OFFER </h1>
 
 <div class="image-box">
 
@@ -266,7 +268,7 @@
 
 
 <span id="price">Ksh. 600</span>
-<p><a href="#" class="btn">add to cart</a></p>
+<p><a href="#menu" class="btn">add to cart</a></p>
 
 
 
@@ -319,18 +321,36 @@
             <div class="inputBox">
                 <div class="input">
                     <span>your address</span>
-                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" placeholder="enter your address" id="address" cols="30" rows="10"></textarea>
                 </div>
                 <div class="input">
                     <span>your message</span>
-                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" placeholder="enter your message" id="textarea" cols="30" rows="10"></textarea>
                 </div>
             </div>
 
+              
             <input type="submit" value="order now" class="btn">
 
         </form>
+<!--CHECKOUT-->
 
+
+<div class="product-container">
+    <h4 class="checkout" id="checkout">CHECKOUT</h4>
+    <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+    </div>
+    <div class="products">
+
+        <ion-icon name="caret-back-circle"></ion-icon>
+    </div>
+
+
+</div>
     </section>
 
     <!-- order section ends -->
@@ -382,19 +402,27 @@
     <!-- review section starts  -->
 
     <section class="review" id="review">
-
+            <!-- <p>
+            <h1>****************CUSTOMER REVIEWS ARE TO GO HERE*********************</h1>
+            </p> -->
 
     </section>
 
     <!-- review section ends -->
 
-    <p>
-    <h1>****************CUSTOMER REVIEWS ARE TO GO HERE*********************</h1>
-    </p>
+    <!--Login section starts-->
+    <section class="form-box">
 
-
-
-
+            <h3 class="login"></h3>
+       
+            <form action="" method="POST" class="box">
+                <h1></h1>
+                <input type="text" name="" placeholder="Enter username" id="username">
+                <input type="password" name="" placeholder="Enter password" id="password">
+                <input type="submit" name="" value="LogIn" id="form">
+            </form>
+    </section>
+    <!--LogIn section ends-->
 
     <!-- Footer section starts  -->
 
@@ -440,7 +468,7 @@
 
         </div>
 
-        <div class="credit"> copyright @ 2022 by <span>Luyo Samson</span> </div>
+        <div class="credit"> copyright @ 2022 by <span>Sam Inc</span> </div>
 
     </section>
 
