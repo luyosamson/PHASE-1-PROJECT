@@ -1,5 +1,5 @@
 
-				FOODIN
+				##FOODIN
 This is an end of  phase 1 project developed during Moringa School Bootcamp.It is a single page website developed using three
 technologies namely HTML,CSS AND javaScript.It has been hosted on the gh pages accessible through the link provided below.
 
