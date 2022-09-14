@@ -45,7 +45,7 @@ inCart:0,
 tag:"images/home-img-2.png"
 },
 {
-name:"Hot Pizaa",
+name:"Hot Pizza",
 price:1100,
 inCart:0,
 tag:"images/home-img-3.png"
