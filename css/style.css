@@ -800,6 +800,9 @@ font-size: 50px bold green;
     background-color: burlywood;
     border-radius: 5px;
 }
+.product ion-icon{
+    cursor: pointer;
+}
 
 .quantity {
     width: 30%;
