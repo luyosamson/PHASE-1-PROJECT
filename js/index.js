@@ -216,15 +216,17 @@ productContainer.innerHTML+=`
 
 <div class="price" >Ksh.${item.price}.00</div>
 <div class="quantity">
-<ion-icon name="caret-back-circle"></ion-icon>
+<ion-icon name="arrow-dropleft-circle"></ion-icon>
 <span class="inCart">${item.inCart}</span>
-<ion-icon name="caret-forward-circle"></ion-icon>
+<ion-icon name="arrow-dropright-circle"></ion-icon>
 </div>
 <div class="total">
 Ksh.${item.inCart*item.price}.00
 </div>
 </div>
 `
+
+
 })
 productContainer.innerHTML+=`
 <div class="basketTotalContainer">
